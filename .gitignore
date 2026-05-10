@@ -1,0 +1,8 @@
+node_modules/
+.features-gen/
+test-results/
+playwright-report/
+*.log
+.env
+.auth/
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node", "@playwright/test"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "step_definitions/**/*.ts",
+    "fixtures/**/*.ts",
+    "utils/**/*.ts",
+    "types/**/*.ts",
+    "playwright.config.ts",
+    "global-setup.ts"
+  ]
+}

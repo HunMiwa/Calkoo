@@ -1,0 +1,41 @@
+{
+  "name": "globalblue",
+  "version": "1.0.0",
+  "description": "Calkoo VAT calculator homework — Playwright BDD (TypeScript)",
+  "private": true,
+  "scripts": {
+    "bddgen": "bddgen",
+    "scrape:vat-rates": "node scripts/scrape-calkoo-vat-rates.mjs",
+    "test": "bddgen && playwright test",
+    "test:headed": "bddgen && playwright test --headed",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "printWidth": 100,
+    "semi": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "plugins": [
+      "prettier-plugin-gherkin"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49",
+    "@types/node": "^20.19.40",
+    "playwright-bdd": "^8.5.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-gherkin": "^3.1.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
