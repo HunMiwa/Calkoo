@@ -1,11 +1,10 @@
-import { Given, Then, When, test } from '../fixtures/fixtures';
+import { Given, Then, When} from '../fixtures/fixtures';
 
 Given('I open the VAT calculator', async function ({ vatCalculator }) {
   await vatCalculator.gotoCalculator();
 });
 
 Then('I check that the VAT rate is correct for the countries', async function ({ vatCalculator }) {
-  test.setTimeout(20 * 60 * 1000);
   await vatCalculator.assertVatRatesMatchCountries();
 });
 

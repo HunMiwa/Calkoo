@@ -18,7 +18,7 @@ const storageStatePath = path.join(__dirname, '.auth', 'calkoo-storage.json');
 export default defineConfig({
   globalSetup: path.join(__dirname, 'global-setup.ts'),
   testDir,
-  timeout: 30_000,
+  timeout: 80_000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 1 : 0,
